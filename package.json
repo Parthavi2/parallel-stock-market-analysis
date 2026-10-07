@@ -1,0 +1,13 @@
+{
+  "name": "stock-market-parallel-gui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard for the Sequential vs OpenMP Stock Market Data Analysis project (DAA + Parallel Programming). No npm dependencies.",
+  "type": "module",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "start": "node backend/server.js",
+    "benchmark": "node scripts/benchmark.js",
+    "test": "node tests/metrics.test.js"
+  }
+}

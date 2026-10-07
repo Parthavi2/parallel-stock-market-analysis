@@ -1,0 +1,11 @@
+build/
+node_modules/
+.DS_Store
+
+# Large datasets - not stored in GitHub
+data/nse_2000000.csv
+nse_2000000.csv
+
+# Local compiled Windows executables
+openmp.exe
+sequential.exe

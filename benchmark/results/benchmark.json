@@ -1,0 +1,607 @@
+{
+  "generatedAt": "2026-10-07T17:32:21.537Z",
+  "repetitions": 3,
+  "statistic": "median",
+  "system": {
+    "cpu": "Apple M2",
+    "logicalCores": 8,
+    "platform": "Darwin 23.5.0 (arm64)",
+    "memoryGB": 8,
+    "node": "v22.14.0",
+    "sequentialBuilt": true,
+    "openmpBuilt": true,
+    "ompVersion": 202011
+  },
+  "results": [
+    {
+      "dataset": "1000000",
+      "records": 1000000,
+      "mode": "sequential",
+      "threads": 1,
+      "runs": [
+        {
+          "loadingTime": 1.973677959,
+          "computationTime": 0.004654459,
+          "totalTime": 1.978332418
+        },
+        {
+          "loadingTime": 1.87977575,
+          "computationTime": 0.003942541,
+          "totalTime": 1.883718291
+        },
+        {
+          "loadingTime": 1.875848833,
+          "computationTime": 0.003896042,
+          "totalTime": 1.879744875
+        }
+      ],
+      "median": {
+        "loadingTime": 1.87977575,
+        "computationTime": 0.003942541,
+        "totalTime": 1.883718291
+      },
+      "result": {
+        "program": "sequential",
+        "threads": 1,
+        "records": 1000000,
+        "averageOpen": 864.0623312899652,
+        "averageClose": 861.1342871499618,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 427236473823704,
+        "averageVolume": 427236473.823704,
+        "positiveRecords": 472367,
+        "negativeRecords": 517177,
+        "returnCount": 1000000,
+        "averageReturn": -0.007280278644226073,
+        "loadingTime": 1.973677959,
+        "computationTime": 0.004654459,
+        "totalTime": 1.978332418,
+        "dataset": "1000000",
+        "mode": "sequential",
+        "requestedThreads": 1,
+        "wallSeconds": 2.015725125,
+        "ranAt": "2026-10-07T17:30:58.308Z"
+      }
+    },
+    {
+      "dataset": "1000000",
+      "records": 1000000,
+      "mode": "openmp",
+      "threads": 1,
+      "runs": [
+        {
+          "loadingTime": 1.862431458,
+          "computationTime": 0.007380625,
+          "totalTime": 1.869812083
+        },
+        {
+          "loadingTime": 1.867530291,
+          "computationTime": 0.0044175,
+          "totalTime": 1.871947791
+        },
+        {
+          "loadingTime": 1.94494775,
+          "computationTime": 0.009525333,
+          "totalTime": 1.954473083
+        }
+      ],
+      "median": {
+        "loadingTime": 1.867530291,
+        "computationTime": 0.007380625,
+        "totalTime": 1.871947791
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 1,
+        "records": 1000000,
+        "averageOpen": 864.0623312899652,
+        "averageClose": 861.1342871499618,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 427236473823704,
+        "averageVolume": 427236473.823704,
+        "positiveRecords": 472367,
+        "negativeRecords": 517177,
+        "returnCount": 1000000,
+        "averageReturn": -0.007280278644226073,
+        "loadingTime": 1.862431458,
+        "computationTime": 0.007380625,
+        "totalTime": 1.869812083,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "1000000",
+        "mode": "openmp",
+        "requestedThreads": 1,
+        "wallSeconds": 1.909068208,
+        "ranAt": "2026-10-07T17:31:03.987Z"
+      },
+      "speedupCompute": 0.5341744093488018,
+      "speedupTotal": 1.0062878356205183,
+      "efficiencyCompute": 53.417440934880176,
+      "efficiencyTotal": 100.62878356205182,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": true
+      }
+    },
+    {
+      "dataset": "1000000",
+      "records": 1000000,
+      "mode": "openmp",
+      "threads": 2,
+      "runs": [
+        {
+          "loadingTime": 1.891277792,
+          "computationTime": 0.002776,
+          "totalTime": 1.8940537919999998
+        },
+        {
+          "loadingTime": 1.895374083,
+          "computationTime": 0.00283,
+          "totalTime": 1.8982040830000002
+        },
+        {
+          "loadingTime": 1.871484959,
+          "computationTime": 0.002807333,
+          "totalTime": 1.874292292
+        }
+      ],
+      "median": {
+        "loadingTime": 1.891277792,
+        "computationTime": 0.002807333,
+        "totalTime": 1.8940537919999998
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 2,
+        "records": 1000000,
+        "averageOpen": 864.0623312902248,
+        "averageClose": 861.1342871498995,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 427236473823620,
+        "averageVolume": 427236473.82362,
+        "positiveRecords": 472367,
+        "negativeRecords": 517177,
+        "returnCount": 1000000,
+        "averageReturn": -0.0072802786442251926,
+        "loadingTime": 1.891277792,
+        "computationTime": 0.002776,
+        "totalTime": 1.8940537919999998,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "1000000",
+        "mode": "openmp",
+        "requestedThreads": 2,
+        "wallSeconds": 1.898402125,
+        "ranAt": "2026-10-07T17:31:09.720Z"
+      },
+      "speedupCompute": 1.4043724061235343,
+      "speedupTotal": 0.9945431850754957,
+      "efficiencyCompute": 70.21862030617672,
+      "efficiencyTotal": 49.727159253774786,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    },
+    {
+      "dataset": "1000000",
+      "records": 1000000,
+      "mode": "openmp",
+      "threads": 4,
+      "runs": [
+        {
+          "loadingTime": 1.864667958,
+          "computationTime": 0.001461334,
+          "totalTime": 1.866129292
+        },
+        {
+          "loadingTime": 1.871637459,
+          "computationTime": 0.002001166,
+          "totalTime": 1.8736386250000001
+        },
+        {
+          "loadingTime": 1.901926417,
+          "computationTime": 0.001974875,
+          "totalTime": 1.903901292
+        }
+      ],
+      "median": {
+        "loadingTime": 1.871637459,
+        "computationTime": 0.001974875,
+        "totalTime": 1.8736386250000001
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 4,
+        "records": 1000000,
+        "averageOpen": 864.0623312900472,
+        "averageClose": 861.1342871501214,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 427236473823639.6,
+        "averageVolume": 427236473.82363963,
+        "positiveRecords": 472367,
+        "negativeRecords": 517177,
+        "returnCount": 1000000,
+        "averageReturn": -0.007280278644225506,
+        "loadingTime": 1.864667958,
+        "computationTime": 0.001461334,
+        "totalTime": 1.866129292,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "1000000",
+        "mode": "openmp",
+        "requestedThreads": 4,
+        "wallSeconds": 1.870035916,
+        "ranAt": "2026-10-07T17:31:15.374Z"
+      },
+      "speedupCompute": 1.9963496423824292,
+      "speedupTotal": 1.0053797279077763,
+      "efficiencyCompute": 49.90874105956073,
+      "efficiencyTotal": 25.134493197694407,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    },
+    {
+      "dataset": "1000000",
+      "records": 1000000,
+      "mode": "openmp",
+      "threads": 8,
+      "runs": [
+        {
+          "loadingTime": 1.896710834,
+          "computationTime": 0.001941209,
+          "totalTime": 1.898652043
+        },
+        {
+          "loadingTime": 1.870195,
+          "computationTime": 0.001822334,
+          "totalTime": 1.8720173340000001
+        },
+        {
+          "loadingTime": 1.900508167,
+          "computationTime": 0.001829708,
+          "totalTime": 1.902337875
+        }
+      ],
+      "median": {
+        "loadingTime": 1.896710834,
+        "computationTime": 0.001829708,
+        "totalTime": 1.898652043
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 8,
+        "records": 1000000,
+        "averageOpen": 864.0623312899776,
+        "averageClose": 861.1342871500365,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 427236473823682.3,
+        "averageVolume": 427236473.8236823,
+        "positiveRecords": 472367,
+        "negativeRecords": 517177,
+        "returnCount": 1000000,
+        "averageReturn": -0.007280278644225436,
+        "loadingTime": 1.896710834,
+        "computationTime": 0.001941209,
+        "totalTime": 1.898652043,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "1000000",
+        "mode": "openmp",
+        "requestedThreads": 8,
+        "wallSeconds": 1.902551208,
+        "ranAt": "2026-10-07T17:31:21.063Z"
+      },
+      "speedupCompute": 2.1547378051579815,
+      "speedupTotal": 0.9921345503747998,
+      "efficiencyCompute": 26.93422256447477,
+      "efficiencyTotal": 12.401681879684997,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    },
+    {
+      "dataset": "2000000",
+      "records": 2000000,
+      "mode": "sequential",
+      "threads": 1,
+      "runs": [
+        {
+          "loadingTime": 3.805772542,
+          "computationTime": 0.008744208,
+          "totalTime": 3.81451675
+        },
+        {
+          "loadingTime": 3.7390175,
+          "computationTime": 0.008307417,
+          "totalTime": 3.7473249170000003
+        },
+        {
+          "loadingTime": 3.789861,
+          "computationTime": 0.0088395,
+          "totalTime": 3.7987005000000003
+        }
+      ],
+      "median": {
+        "loadingTime": 3.789861,
+        "computationTime": 0.008744208,
+        "totalTime": 3.7987005000000003
+      },
+      "result": {
+        "program": "sequential",
+        "threads": 1,
+        "records": 2000000,
+        "averageOpen": 864.0623312895933,
+        "averageClose": 861.1342871501489,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 854472947647730,
+        "averageVolume": 427236473.823865,
+        "positiveRecords": 944734,
+        "negativeRecords": 1034354,
+        "returnCount": 2000000,
+        "averageReturn": -0.007280278644228724,
+        "loadingTime": 3.805772542,
+        "computationTime": 0.008744208,
+        "totalTime": 3.81451675,
+        "dataset": "2000000",
+        "mode": "sequential",
+        "requestedThreads": 1,
+        "wallSeconds": 3.819019958,
+        "ranAt": "2026-10-07T17:31:28.667Z"
+      }
+    },
+    {
+      "dataset": "2000000",
+      "records": 2000000,
+      "mode": "openmp",
+      "threads": 1,
+      "runs": [
+        {
+          "loadingTime": 3.721353,
+          "computationTime": 0.007880125,
+          "totalTime": 3.729233125
+        },
+        {
+          "loadingTime": 3.870891583,
+          "computationTime": 0.009415625,
+          "totalTime": 3.880307208
+        },
+        {
+          "loadingTime": 3.771059916,
+          "computationTime": 0.008772875,
+          "totalTime": 3.779832791
+        }
+      ],
+      "median": {
+        "loadingTime": 3.771059916,
+        "computationTime": 0.008772875,
+        "totalTime": 3.779832791
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 1,
+        "records": 2000000,
+        "averageOpen": 864.0623312895933,
+        "averageClose": 861.1342871501489,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 854472947647730,
+        "averageVolume": 427236473.823865,
+        "positiveRecords": 944734,
+        "negativeRecords": 1034354,
+        "returnCount": 2000000,
+        "averageReturn": -0.007280278644228724,
+        "loadingTime": 3.721353,
+        "computationTime": 0.007880125,
+        "totalTime": 3.729233125,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "2000000",
+        "mode": "openmp",
+        "requestedThreads": 1,
+        "wallSeconds": 3.739668917,
+        "ranAt": "2026-10-07T17:31:39.967Z"
+      },
+      "speedupCompute": 0.9967323140931565,
+      "speedupTotal": 1.0049916782152177,
+      "efficiencyCompute": 99.67323140931566,
+      "efficiencyTotal": 100.49916782152178,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": true
+      }
+    },
+    {
+      "dataset": "2000000",
+      "records": 2000000,
+      "mode": "openmp",
+      "threads": 2,
+      "runs": [
+        {
+          "loadingTime": 3.783001792,
+          "computationTime": 0.006361416,
+          "totalTime": 3.7893632079999997
+        },
+        {
+          "loadingTime": 3.7641905,
+          "computationTime": 0.005337584,
+          "totalTime": 3.769528084
+        },
+        {
+          "loadingTime": 3.775314291,
+          "computationTime": 0.003875583,
+          "totalTime": 3.779189874
+        }
+      ],
+      "median": {
+        "loadingTime": 3.775314291,
+        "computationTime": 0.005337584,
+        "totalTime": 3.779189874
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 2,
+        "records": 2000000,
+        "averageOpen": 864.0623312899652,
+        "averageClose": 861.1342871499618,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 854472947647408,
+        "averageVolume": 427236473.823704,
+        "positiveRecords": 944734,
+        "negativeRecords": 1034354,
+        "returnCount": 2000000,
+        "averageReturn": -0.007280278644226073,
+        "loadingTime": 3.783001792,
+        "computationTime": 0.006361416,
+        "totalTime": 3.7893632079999997,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "2000000",
+        "mode": "openmp",
+        "requestedThreads": 2,
+        "wallSeconds": 3.794573625,
+        "ranAt": "2026-10-07T17:31:51.434Z"
+      },
+      "speedupCompute": 1.638233328037554,
+      "speedupTotal": 1.0051626477235847,
+      "efficiencyCompute": 81.91166640187771,
+      "efficiencyTotal": 50.258132386179234,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    },
+    {
+      "dataset": "2000000",
+      "records": 2000000,
+      "mode": "openmp",
+      "threads": 4,
+      "runs": [
+        {
+          "loadingTime": 3.708553084,
+          "computationTime": 0.003998916,
+          "totalTime": 3.712552
+        },
+        {
+          "loadingTime": 3.787301416,
+          "computationTime": 0.004210334,
+          "totalTime": 3.79151175
+        },
+        {
+          "loadingTime": 3.754294542,
+          "computationTime": 0.005072375,
+          "totalTime": 3.759366917
+        }
+      ],
+      "median": {
+        "loadingTime": 3.754294542,
+        "computationTime": 0.004210334,
+        "totalTime": 3.759366917
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 4,
+        "records": 2000000,
+        "averageOpen": 864.062331290225,
+        "averageClose": 861.1342871498995,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 854472947647240,
+        "averageVolume": 427236473.82362,
+        "positiveRecords": 944734,
+        "negativeRecords": 1034354,
+        "returnCount": 2000000,
+        "averageReturn": -0.0072802786442251926,
+        "loadingTime": 3.708553084,
+        "computationTime": 0.003998916,
+        "totalTime": 3.712552,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "2000000",
+        "mode": "openmp",
+        "requestedThreads": 4,
+        "wallSeconds": 3.717112208,
+        "ranAt": "2026-10-07T17:32:02.712Z"
+      },
+      "speedupCompute": 2.0768442598615695,
+      "speedupTotal": 1.0104628209665123,
+      "efficiencyCompute": 51.92110649653924,
+      "efficiencyTotal": 25.261570524162806,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    },
+    {
+      "dataset": "2000000",
+      "records": 2000000,
+      "mode": "openmp",
+      "threads": 8,
+      "runs": [
+        {
+          "loadingTime": 3.741701292,
+          "computationTime": 0.002685166,
+          "totalTime": 3.744386458
+        },
+        {
+          "loadingTime": 3.752566959,
+          "computationTime": 0.002915292,
+          "totalTime": 3.755482251
+        },
+        {
+          "loadingTime": 3.736471042,
+          "computationTime": 0.002830875,
+          "totalTime": 3.7393019169999997
+        }
+      ],
+      "median": {
+        "loadingTime": 3.741701292,
+        "computationTime": 0.002830875,
+        "totalTime": 3.744386458
+      },
+      "result": {
+        "program": "openmp",
+        "threads": 8,
+        "records": 2000000,
+        "averageOpen": 864.0623312900472,
+        "averageClose": 861.1342871501214,
+        "highestPrice": 124490,
+        "lowestPrice": 0.18,
+        "totalVolume": 854472947647279.5,
+        "averageVolume": 427236473.82363975,
+        "positiveRecords": 944734,
+        "negativeRecords": 1034354,
+        "returnCount": 2000000,
+        "averageReturn": -0.007280278644225506,
+        "loadingTime": 3.741701292,
+        "computationTime": 0.002685166,
+        "totalTime": 3.744386458,
+        "ompVersion": 202011,
+        "availableProcs": 8,
+        "dataset": "2000000",
+        "mode": "openmp",
+        "requestedThreads": 8,
+        "wallSeconds": 3.750595792,
+        "ranAt": "2026-10-07T17:32:14.027Z"
+      },
+      "speedupCompute": 3.0888711087561265,
+      "speedupTotal": 1.0145054583999886,
+      "efficiencyCompute": 38.61088885945158,
+      "efficiencyTotal": 12.681318229999858,
+      "correctness": {
+        "match": true,
+        "allBitIdentical": false
+      }
+    }
+  ]
+}
